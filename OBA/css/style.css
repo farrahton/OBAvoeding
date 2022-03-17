@@ -306,6 +306,7 @@ span img:nth-of-type(2) {
   flex-direction: row;
   flex-wrap: wrap;
   flex: 1 1 40%;
+
   overflow: hidden;
   }
 
