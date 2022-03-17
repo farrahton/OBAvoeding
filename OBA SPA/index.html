@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/OBA SPA/css/style.css">
+    <script type="module" src="/OBA SPA/javascript/main.js"></script>
+    <title>OBA Single Page App</title>
+</head>
+
+<body>
+
+    <header>
+        <section>
+            <img src="/OBA SPA/images/1x/Voedinglogo.png"></img>
+        </section>
+
+        <button type="button" id="saveEvent">
+            <img src="/OBA SPA/images/add-bookmark.png"></img>
+        </button>
+
+        <section>
+            <h1>Alles over voeding en sport</h1>
+            <a href="#Info" class="btn btn-white btn-animated">Wordt een fitspiration</a>
+        </section>
+    </header>
+
+    <div class="Orange"></div>
+
+    <span id="activiteitenSpan" class="hidden">
+        <h2>Activiteiten kalender</h2> <img src="images/leave.jpeg"></img>
+        <p> Je hebt nog geen activiteiten op de planning staan.</p>
+        <p> Begin met opslaan op de pagina! </p>
+        <img src="images/activiteiten.webp"></img>
+    </span>
+
+
+    <main>
+
+        <section id="Info">
+            <h2>Help! Waar moet ik beginnen?</h2>
+            <div class="eventCard">
+                <div class="eventCardImage">
+                    <div class="eventCardImageDate">
+                        <!-- <i class="material-icons icon">&#xE192;</i> -->
+                        <time>5 JUNI</time>
+                    </div>
+                    <!-- <div class="eventCardImageNotif"> ACTIVITEIT VAN VANDAAG</div> -->
+                </div>
+                <article class="eventCardText">
+                    <h3>Workshop meal prep</h3>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea aspernatur fugit culpa. Est tempora
+                        dolor praesentium vero voluptate autem consequuntur, molestias possimus reprehenderit, mollitia
+                        natus maxime debitis cumque soluta sunt.</p>
+                    <button>Ik kom!</button>
+                </article>
+            </div>
+
+
+            <div class="eventCard">
+                <div class="eventCardImage">
+                    <div class="eventCardImageDate">
+                        <time>11 JUNI</time>
+                    </div>
+                </div>
+                <article class="eventCardText">
+                    <h3>Sportklas op terras </h3>
+                    <br>
+                    <p>Met een gezellige groep gaan we hier op de OBA een sportklas houden op het terras. Achteraf drinken we een heerlijke proteine gevulde smoothie.</p>
+                    <button>Ik kom!</button>
+                </article>
+            </div>
+
+        </section>
+
+        <section class="Algemeen">
+            <h2>Algemene kennis</h2>
+            <ul>
+                <li class="loadingState">
+                    <figure></figure>
+                    <h3></h3>
+                </li>
+            </ul>
+        </section>
+
+        <section class="Kookboeken">
+            <h2>Kookboeken</h2>
+            <ul></ul>
+        </section>
+
+        <section class="Suikers">
+            <h2>Luisterboeken over suikers</h2>
+            <ul></ul>
+        </section>
+
+        <section class="Eiwitten">
+            <h2>Alles over eiwitten</h2>
+            <ul></ul>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
