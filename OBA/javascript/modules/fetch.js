@@ -16,7 +16,6 @@ const secret = '4289fec4e962a33118340c888699438d';
 const refine = `&refine=true`
 const detail = 'Default';
 const url = `${cors}${endpoint}${topic}${refine}${type}&authorization=${key}&detaillevel=${detail}&output=json`;
-// const url2 = `https://obaliquid.staging.aquabrowser.nl/onderwijs/api/v1/search/?q=voeding+NOT+lom.lifecycle.contribute.publisher%3Dwikipedia&authorization=a57b7bbd1cde2f6fb7ce5b3f2d1d96e0`
 
 const config = {
   Authorization: `Bearer ${secret}`

@@ -1,4 +1,7 @@
 <!-- Add a link to your live demo in Github Pages 🌐-->
+
+HELLLLOOOOO
+
 # Link to live demo 
 <!-- ☝️ replace the description with a description of your own work -->
 
@@ -12,13 +15,7 @@
 
 
 # Brainstorm sess 🤯 
-- Steps to start a creative Businnes
-- Mainsplain to the finance guy overview resources
-- Food and how it affects your work-out 
-    https://www.specialisednutritioneurope.eu/sports-food/
-- 
 
-- articles, podcasts/audiobooks, books, activities, highlights of the day, lijstjes,
 
 # How to install this project? 🤓
 
@@ -33,13 +30,3 @@ The features that this project should have
 <!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
 
 
-    <!-- <h2>Motivatie</h2>
-        <h2>Voeding & Sport algemeen</h2>
-        <h2>Alles over suikers</h2>
-        <h2>Alles over eiwitten</h2>
-        <h2>Dieetvoorkeuren</h2>
-        <h2>Afvallen</h2>
-        <h2>Kookboeken</h2>
-
-        <h3>Activiteiten op OBA</h3>
-        <h3>Samenwerking met ...</h3> -->
