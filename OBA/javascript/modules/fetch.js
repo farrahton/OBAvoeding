@@ -16,13 +16,16 @@ const secret = '4289fec4e962a33118340c888699438d';
 const refine = `&refine=true`
 const detail = 'Default';
 const url = `${cors}${endpoint}${topic}${refine}${type}&authorization=${key}&detaillevel=${detail}&output=json`;
+const loader = document.querySelector('.loadingBook');
 
 const config = {
   Authorization: `Bearer ${secret}`
 };
+loader.classList.remove('hideLoader');  
 
 fetch(url, config)
   .then(response => {
+    loader.classList.add('hideLoader');
     return response.json();
   })
   .then(data => {
@@ -30,6 +33,7 @@ fetch(url, config)
     console.log(data)
   })
   .catch(err => {
+    loader.classList.remove('hideLoader'); 
     console.log(err);
   });
 } 
