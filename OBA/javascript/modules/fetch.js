@@ -17,6 +17,7 @@ const refine = `&refine=true`
 const detail = 'Default';
 const url = `${cors}${endpoint}${topic}${refine}${type}&authorization=${key}&detaillevel=${detail}&output=json`;
 const loader = document.querySelector('.loadingBook');
+const errorState = document.querySelector('.error')
 
 const config = {
   Authorization: `Bearer ${secret}`
@@ -33,8 +34,12 @@ fetch(url, config)
     console.log(data)
   })
   .catch(err => {
-    loader.classList.remove('hideLoader'); 
     console.log(err);
+    errorState.innerHTML =
+      ` 
+      <h5> Er ging helaas iets fout. Probeer het opnieuw door eerst toestemming te geven via https://cors-anywhere.herokuapp.com/corsdemo <h5>
+      `
+    ;
   });
 } 
 
