@@ -9,7 +9,7 @@ export function render(data, selector) {
     const html = `
             <li>
               <img src="${
-                item.coverimages ? item.coverimages[1] : '.OBA/images/book-placeholder.jpeg'
+                item.coverimages ? item.coverimages[1] : './OBA/images/book-placeholder.jpeg'
               }">
               <h4>${item.titles[0]}</h4>
             </li>
