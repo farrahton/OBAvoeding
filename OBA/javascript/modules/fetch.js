@@ -5,7 +5,7 @@
 // secret='4289fec4e962a33118340c888699438d'
 
 import { render } from "./render.js";
-import { checkState } from "../states.js";
+import { checkState } from "./states.js";
 
 export function fetchOBA(topic, type, selector) {
 
@@ -33,14 +33,8 @@ fetch(url, config)
     console.log(data)
   })
   .catch(err => {
+    console.log(err)
     checkState('error');
-
-    console.log(err);
-    errorState.innerHTML =
-      ` 
-      <h5> Er ging helaas iets fout. Probeer het opnieuw door eerst toestemming te geven via https://cors-anywhere.herokuapp.com/corsdemo <h5>
-      `
-    ;
   });
 } 
 

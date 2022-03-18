@@ -1,5 +1,5 @@
 // import { selector } from "./fetch.js";
-import { checkState } from "../states.js";
+import { checkState } from "./states.js";
 
 // render data
 export function render(data, selector) {
