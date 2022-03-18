@@ -44,11 +44,11 @@ On this website a person can find all the necessary information about food and f
 - [x] use multiple parameters
 - [x] browse different types of content (book, audiobook)
 
-- [] the form thingy introduction
-- [] extra content with some fun facts
-- [] filtered data
-- [] detail page for books
-- [] when you click on 'ik kom' it actually saves it to the empty bookmark
+- [ ] the form thingy introduction
+- [ ] extra content with some fun facts
+- [ ] filtered data
+- [ ] detail page for books
+- [ ] when you click on 'ik kom' it actually saves it to the empty bookmark
 
 
 
