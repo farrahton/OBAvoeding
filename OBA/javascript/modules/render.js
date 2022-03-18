@@ -1,4 +1,5 @@
 // import { selector } from "./fetch.js";
+import { checkState } from "../states.js";
 
 // render data
 export function render(data, selector) {
@@ -16,4 +17,6 @@ export function render(data, selector) {
           `;
     section.insertAdjacentHTML('beforeend', html);
   });
+
+  checkState('resultsLoaded');
 }

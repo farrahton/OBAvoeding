@@ -5,6 +5,7 @@
 // secret='4289fec4e962a33118340c888699438d'
 
 import { render } from "./render.js";
+import { checkState } from "../states.js";
 
 export function fetchOBA(topic, type, selector) {
 
@@ -16,17 +17,15 @@ const secret = '4289fec4e962a33118340c888699438d';
 const refine = `&refine=true`
 const detail = 'Default';
 const url = `${cors}${endpoint}${topic}${refine}${type}&authorization=${key}&detaillevel=${detail}&output=json`;
-const loader = document.querySelector('.loadingBook');
-const errorState = document.querySelector('.error')
 
 const config = {
   Authorization: `Bearer ${secret}`
 };
-loader.classList.remove('hideLoader');  
+
+checkState('loading');
 
 fetch(url, config)
   .then(response => {
-    loader.classList.add('hideLoader');
     return response.json();
   })
   .then(data => {
@@ -34,6 +33,8 @@ fetch(url, config)
     console.log(data)
   })
   .catch(err => {
+    checkState('error');
+
     console.log(err);
     errorState.innerHTML =
       ` 

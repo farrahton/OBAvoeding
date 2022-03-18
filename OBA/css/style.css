@@ -411,6 +411,7 @@ span img:nth-of-type(2) {
   width: 6.25em;
   height: 3.75em;
   overflow: hidden;
+  display: none;
 } 
 
 .bookPage {
@@ -467,12 +468,6 @@ span img:nth-of-type(2) {
     background:lightgrey;
   }
 }
-
-.hideLoader {
-  left: -1000em;
-  display: none;
-}
-
 
 .error {
   color: red ;
